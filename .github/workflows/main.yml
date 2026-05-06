@@ -1,0 +1,12 @@
+name: My First Pipeline
+on: [push] 
+
+jobs:
+  check-status:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      
+      - name: Testing Message
+        run: echo "Super! Pipeline successful-a run aagiduchu!"
